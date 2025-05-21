@@ -5,8 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    [SerializeField] private SceneLoader sceneLoader;
-    [SerializeField] private AudioManager audioManager;
+    public SceneLoader sceneLoader;
+    public AudioManager audioManager;
 
     private void Awake()
     {
