@@ -21,6 +21,8 @@ public class SceneLoader : MonoBehaviour
 
         // Load the actual target scene
         AsyncOperation targetOp = SceneManager.LoadSceneAsync(targetScene);
+        Debug.Log($"Loading {targetScene}...");
+        // Optionally, you can set the loading screen to be the active scene
         while (!targetOp.isDone) yield return null;
     }
 }
